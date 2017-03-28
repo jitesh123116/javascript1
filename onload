@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Onload event</title>
+<script >function myFunc(){
+alert("image loaded succesfully");
+
+}
+
+document.bgColor="red"
+</script>
+</head>
+<body>
+
+<p>Refresh the page and observ</p>
+<img src="image.png" width=150px height=150px onload="myFunc()" >
+</body>
+</html>
