@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ParsInt Function</title>
+	<script type="text/javascript" src="arithmatic.js">
+	
+</script>
+
+</head>
+<body>
+           <p><h1>enter your first and second number</h1></p><br>
+value1 : <input type="text" id="value1" name="value1" value=""/><br>
+        value2 : <input type="text" id="value2" name="value2" value=""/><br>
+<button onclick="sum()">add</button>
+<button onclick="sub()">subtract</button>
+<button onclick="multiplication()">multiplication</button>
+<button onclick="division()"> Division</button>
+</body>
+</html> 
+
+
+/********** .js file ***********/
+function sum(){
+	
+	var num1= parseInt(document.getElementById("value1").value);
+     var num2 = parseInt(document.getElementById("value2").value);
+    var sum=num1+num2;
+	alert(sum);
+                     
+}
+function sub(){
+	
+
+	var num1= parseInt(document.getElementById("value1").value);
+     var num2 = parseInt(document.getElementById("value2").value);
+     if(num1>num2){
+    var sub=num1-num2;
+	alert(sub);
+}
+else{
+	var sub=num2-num1;
+alert(sub);
+}
+}
+function division(){
+	var num1= parseInt(document.getElementById("value1").value);
+     var num2 = parseInt(document.getElementById("value2").value);
+    var div=num1/num2;
+	alert(div);
+	
+}
+function multiplication(){
+	var num1= parseInt(document.getElementById("value1").value);
+     var num2 = parseInt(document.getElementById("value2").value);
+    var mult=num1*num2;
+	alert(mult);
+}
+
